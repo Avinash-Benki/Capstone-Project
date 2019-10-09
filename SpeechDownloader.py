@@ -19,20 +19,20 @@ import audioUtils
 # Google Speech Commands Dataset V2
 ###################
 
-#GSCmdV2Categs = {'unknown' : 0, 'silence' : 1, '_unknown_' : 0, '_silence_' : 1, '_background_noise_' : 1, 'yes' : 2, 
-#                 'no' : 3, 'up' : 4, 'down' : 5, 'left' : 6, 'right' : 7, 'on' : 8, 'off' : 9, 'stop' : 10, 'go' : 11}
-#numGSCmdV2Categs = 12
+GSCmdV2Categs = {'unknown' : 0, 'silence' : 1, '_unknown_' : 0, '_silence_' : 1, '_background_noise_' : 1, 'yes' : 2, 
+                 'no' : 3, 'up' : 4, 'down' : 5, 'left' : 6, 'right' : 7, 'on' : 8, 'off' : 9, 'stop' : 10, 'go' : 11}
+numGSCmdV2Categs = 12
 
 #"Yes", "No", "Up", "Down", "Left", "Right", "On", "Off", "Stop", "Go", "Zero", 
 #"One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", and "Nine"
 
-GSCmdV2Categs = {'unknown' : 0, 'silence' : 0, '_unknown_' : 0, '_silence_' : 0, '_background_noise_' : 0, 'yes' : 2, 
-                 'no' : 3, 'up' : 4, 'down' : 5, 'left' : 6, 'right' : 7, 'on' : 8, 'off' : 9, 'stop' : 10, 'go' : 11,
-                 'zero' : 12, 'one' : 13, 'two' : 14, 'three' : 15, 'four' : 16, 'five' : 17, 'six' : 18, 
-                 'seven' : 19,  'eight' : 20, 'nine' : 1 }
-numGSCmdV2Categs = 21
+#GSCmdV2Categs = {'unknown' : 0, 'silence' : 0, '_unknown_' : 0, '_silence_' : 0, '_background_noise_' : 0, 'yes' : 2, 
+#                 'no' : 3, 'up' : 4, 'down' : 5, 'left' : 6, 'right' : 7, 'on' : 8, 'off' : 9, 'stop' : 10, 'go' : 11,
+#                 'zero' : 12, 'one' : 13, 'two' : 14, 'three' : 15, 'four' : 16, 'five' : 17, 'six' : 18, 
+#                 'seven' : 19,  'eight' : 20, 'nine' : 1 }
+#numGSCmdV2Categs = 21
 
-def PrepareGoogleSpeechCmd(version = 2, forceDownload = False, task = '20cmd'):
+def PrepareGoogleSpeechCmd(version = 2, forceDownload = False, task = '12cmd'):
     """
     Prepares Google Speech commands dataset version 2 for use
     
